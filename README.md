@@ -29,13 +29,13 @@ The dataset was collected using the Intel [RealSense D435i camera](https://reals
 The dataset contains 56 sequences in total, both indoor and outdoor with challenging motion. Typical scenes include classrooms, offices, stairwells, laboratories, and gardens. Of the 56 sequences, 48 sequences (approximate 47K frames) are designated for training and 8 sequences for testing, from which we sampled 800 frames to construct the testing set.
 Each sequence constains sparse depth maps at three density levels, 1500, 500 and 150 points, corresponding to 0.5%, 0.15% and 0.05% of VGA size.
 
-| <center>  Staircase </center>| Classroom |
+| Staircase | Classroom |
 | :--------: | :-------: |
-| <img src="figures/teaser_stairs.png" width="400"> | <img src="figures/teaser_classroom.png" width="400"> |
+| <img src="figures/teaser_stairs.png" width="450"> | <img src="figures/teaser_classroom.png" width="450"> |
 
 <p align="center">
 <img align="center" src="figures/void_samples.png" width="800">
-</center>
+</p>
 
 ## Dataset Structure
 For the release version of the dataset:
