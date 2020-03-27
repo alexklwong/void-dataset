@@ -167,6 +167,12 @@ data_utils.save_depth(sparse_depth)
 data_utils.save_validity_map(validity_map)
 ```
 
+To read intrinsics or pose (both are store as numpy text files):
+```
+import numpy as np
+K = np.loadtxt('K.txt')
+```
+
 ## Related Projects
 You may also find the following projects useful:
 
