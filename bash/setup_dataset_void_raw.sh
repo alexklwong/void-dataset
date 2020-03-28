@@ -80,3 +80,4 @@ while [ $file_id -le ${#void_raw_urls[@]} ]; do
 done
 
 cd ..
+mv void_raw data/void_raw

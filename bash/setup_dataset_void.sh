@@ -252,5 +252,3 @@ done
 
 cd ..
 mv void_release data/void_release
-
-# python setup/setup/setup_dataset_void.py

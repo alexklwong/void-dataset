@@ -120,27 +120,46 @@ source /opt/ros/kinetic/setup.bash
 
 
 ## Downloading VOID
-To download VOID dataset release version:
+To download VOID dataset release version using gdown:
 ```
-mkdir -p data
-mkdir -p data/void_release
-gdown https://drive.google.com/uc?id=1InfIal4y7OBMGNUDeldEmDxtD0MrewY8
-gdown https://drive.google.com/uc?id=1InfIal4y7OBMGNUDeldEmDxtD0MrewY8
-gdown https://drive.google.com/uc?id=1InfIal4y7OBMGNUDeldEmDxtD0MrewY8
-unzip void_150.zip
-unzip void_500.zip
-unzip void_1500.zip
-mv void_150 data/void_release/
-mv void_500 data/void_release/
-mv void_1500 data/void_release/
+bash bash/setup_dataset_void.sh
+```
+Note: gdown intermittently fails and will complain about permissions
+
+As a workaround you may directly download the dataset by visiting:
+```
+https://drive.google.com/open?id=1GGov8MaBKCEcJEXxY8qrh8Ldt2mErtWs
+https://drive.google.com/open?id=1c3PxnOE0N8tgkvTgPbnUZXS6ekv7pd80
+https://drive.google.com/open?id=14PdJggr2PVJ6uArm9IWlhSHO2y3Q658v
+```
+which will give you three files void_150.zip, void_500.zip, void_1500.zip
+
+Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
+```
+mkdir void_release
+unzip -o void_150.zip -d void_release/
+unzip -o void_500.zip -d void_release/
+unzip -o void_1500.zip -d void_release/
+bash bash/setup_dataset_void.sh unpack-only
 ```
 
-To download the raw VOID dataset (rosbag):
+To download the raw VOID dataset (rosbag) using gdown:
 ```
-mkdir -p data
-gdown https://drive.google.com/uc?id=1RvN-Ne7eXjX9ZPFySCaB5I63G1IBPpO5
-unzip void_raw.zip
-mv void_raw data/
+bash bash/setup_dataset_void_raw.sh
+```
+Note: gdown intermittently fails and will complain about permissions
+
+As a workaround you may directly download the dataset by visiting:
+```
+https://drive.google.com/open?id=19uHUtjUnsZ2zhGPYJ--8xNN1kqpi_uaJ
+```
+which will give you void_raw.zip
+
+Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
+```
+mkdir void_raw
+unzip -o void_raw.zip -d void_raw/
+bash bash/setup_dataset_void_raw.sh unpack-only
 ```
 
 ## Loading and Store Data
