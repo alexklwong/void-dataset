@@ -73,7 +73,7 @@ if [ $# -eq 0 ]; then
 fi
 
 file_id=1
-while [ $file_id -le ${#void_150_urls[@]} ]; do
+while [ $file_id -le ${#void_raw_urls[@]} ]; do
   unzip -o 'void_raw-'${file_id}'.zip'
   mv 'void_raw-'${file_id}'.zip' 'tmp/'
   file_id=$(( ${file_id} + 1 ))
