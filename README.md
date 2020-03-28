@@ -89,7 +89,7 @@ void_raw
 ```
 Files prefixed with dataset are the output of [XIVO][xivo_github]. The dataset file without the density suffix (``dataset'') denotes the dataset file for 150 points.
 
-## Setting up your virtual environment
+## Setting up your Virtual Environment
 We will create a virtual environment with the necessary dependencies
 ```
 virtualenv -p /usr/bin/python3 void-py3env
@@ -162,7 +162,7 @@ unzip -o void_raw.zip -d void_raw/
 bash bash/setup_dataset_void_raw.sh unpack-only
 ```
 
-## Loading and Store Data
+## Loading and Storing Data
 To load depth and validity map filepaths:
 ```
 import data_utils
