@@ -21,7 +21,7 @@ If you use this dataset, please cite our paper:
 
 To follow the VOID sparse-to-dense-depth completion benchmark, please visit: [Awesome State of Depth Completion](https://github.com/alexklwong/awesome-state-of-depth-completion)
 
-## About the Dataset
+## About the dataset
 We propose the VOID dataset for real world use case of depth completion by bootstrapping sparse reconstruction in *metric*}* space from a VIO system ([XIVO][xivo_github]).
 
 The dataset was collected using the Intel [RealSense D435i camera](https://realsense.intel.com/depth-camera), which was configured to produce synchronized accelerometer and gyroscope measurements at 400 Hz, along with synchronized VGA-size (640 x 480) RGB and depth streams at 30 Hz. The depth frames are acquired using active stereo and is aligned to the RGB frame using the sensor factory calibration. All the measurements are timestamped.
@@ -37,7 +37,7 @@ Each sequence constains sparse depth maps at three density levels, 1500, 500 and
 <img align="center" src="figures/void_samples.png" width="800">
 </p>
 
-## Dataset Structure
+## Dataset structure
 For the release version of the dataset:
 ```
 void_release
@@ -89,7 +89,7 @@ void_raw
 ```
 Files prefixed with dataset are the output of [XIVO][xivo_github]. The dataset file without the density suffix (``dataset'') denotes the dataset file for 150 points.
 
-## Setting up your Virtual Environment
+## Setting up your virtual environment
 We will create a virtual environment with the necessary dependencies
 ```
 virtualenv -p /usr/bin/python3 void-py3env
@@ -120,11 +120,11 @@ source /opt/ros/kinetic/setup.bash
 
 
 ## Downloading VOID
-To download VOID dataset release version using gdown:
+To download VOID dataset release version using `gdown`:
 ```
 bash bash/setup_dataset_void.sh
 ```
-Note: gdown intermittently fails and will complain about permissions
+Note: `gdown` intermittently fails and will complain about permissions
 
 As a workaround you may directly download the dataset by visiting:
 ```
@@ -132,7 +132,7 @@ https://drive.google.com/open?id=1GGov8MaBKCEcJEXxY8qrh8Ldt2mErtWs
 https://drive.google.com/open?id=1c3PxnOE0N8tgkvTgPbnUZXS6ekv7pd80
 https://drive.google.com/open?id=14PdJggr2PVJ6uArm9IWlhSHO2y3Q658v
 ```
-which will give you three files void_150.zip, void_500.zip, void_1500.zip
+which will give you three files `void_150.zip`, `void_500.zip`, `void_1500.zip`
 
 Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
 ```
@@ -143,11 +143,11 @@ unzip -o void_1500.zip -d void_release/
 bash bash/setup_dataset_void.sh unpack-only
 ```
 
-To download the raw VOID dataset (rosbag) using gdown:
+To download the raw VOID dataset (rosbag) using `gdown`:
 ```
 bash bash/setup_dataset_void_raw.sh
 ```
-Note: gdown intermittently fails and will complain about permissions
+Note: `gdown` intermittently fails and will complain about permissions
 
 As a workaround you may directly download the dataset by visiting:
 ```
@@ -162,7 +162,7 @@ unzip -o void_raw.zip -d void_raw/
 bash bash/setup_dataset_void_raw.sh unpack-only
 ```
 
-## Loading and Storing Data
+## Loading and storing data
 To load depth and validity map filepaths:
 ```
 import data_utils
@@ -192,10 +192,10 @@ import numpy as np
 K = np.loadtxt('K.txt')
 ```
 
-## Related Projects
+## Related projects
 You may also find the following projects useful:
 
-- [VOICED][voiced_github]: *Unsupervised Depth Completion from Visual Inertial Odometry*. An unsupervised sparse-to-dense depth completion method developed by the authors, published in published in the Robotics and Automation Letters (RA-L) 2020 and the International Conference on Robotics and Automation (ICRA) 2020.
+- [VOICED][voiced_github]: *Unsupervised Depth Completion from Visual Inertial Odometry*. An unsupervised sparse-to-dense depth completion method developed by the authors, published in the Robotics and Automation Letters (RA-L) 2020 and the International Conference on Robotics and Automation (ICRA) 2020.
 - [XIVO][xivo_github]: The Visual-Inertial Odometry system developed at UCLA Vision Lab. The dataset files (e.g. sparse points, absolute poses) in VOID are produced by XIVO.
 - [GeoSup][geosup_github]: *Geo-Supervised Visual Depth Prediction*. A single image depth prediction method developed by the authors, published in the Robotics and Automation Letters (RA-L) 2019 and the International Conference on Robotics and Automation (ICRA) 2019. This work was awarded **Best Paper in Robot Vision** at ICRA 2019.
 
@@ -204,6 +204,6 @@ You may also find the following projects useful:
 [xivo_github]: https://github.com/ucla-vision/xivo
 [geosup_github]: https://github.com/feixh/GeoSup
 
-## License and Disclaimer
+## License and disclaimer
 
 This software is property of the UC Regents, and is provided free of charge for research purposes only. It comes with no warranties, expressed or implied, according to these [terms and conditions](license). For commercial use, please contact [UCLA TDG](https://tdg.ucla.edu).
