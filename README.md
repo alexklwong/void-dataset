@@ -1,7 +1,9 @@
 # VOID Dataset
 Visual Odometry with Inertial and Depth (VOID) dataset
 
-from *Unsupervised Depth Completion from Visual Inertial Odometry* (in RA-L January 2020 & ICRA 2020) [[arxiv]](https://arxiv.org/pdf/1905.08616.pdf)
+from *Unsupervised Depth Completion from Visual Inertial Odometry* (in RA-L January 2020 & ICRA 2020)
+
+[[arxiv]](https://arxiv.org/pdf/1905.08616.pdf) [[poster]]()
 
 Authors: [Alex Wong](http://web.cs.ucla.edu/~alexw/), [Xiaohan Fei](https://feixh.github.io/), Stephanie Tsuei
 
@@ -26,7 +28,7 @@ We propose the VOID dataset for real world use case of depth completion by boots
 
 The dataset was collected using the Intel [RealSense D435i camera](https://realsense.intel.com/depth-camera), which was configured to produce synchronized accelerometer and gyroscope measurements at 400 Hz, along with synchronized VGA-size (640 x 480) RGB and depth streams at 30 Hz. The depth frames are acquired using active stereo and is aligned to the RGB frame using the sensor factory calibration. All the measurements are timestamped.
 
-The dataset contains 56 sequences in total, both indoor and outdoor with challenging motion. Typical scenes include classrooms, offices, stairwells, laboratories, and gardens. Of the 56 sequences, 48 sequences (approximate 47K frames) are designated for training and 8 sequences for testing, from which we sampled 800 frames to construct the testing set.
+The dataset contains 56 sequences in total, both indoor and outdoor with challenging motion. Typical scenes include classrooms, offices, stairwells, laboratories, and gardens. Of the 56 sequences, 48 sequences (approximately 47K frames) are designated for training and 8 sequences for testing, from which we sampled 800 frames to construct the testing set.
 Each sequence constains sparse depth maps at three density levels, 1500, 500 and 150 points, corresponding to 0.5%, 0.15% and 0.05% of VGA size.
 
 | Staircase | Classroom |
