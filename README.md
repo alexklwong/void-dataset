@@ -186,6 +186,18 @@ with open(calibration_path, 'r') as json_file:
 
 Note: we use a radtan (plumb bob) distortion model.
 
+The following are the definitions for the calibration parameter names:
+```
+f_x, f_y : focal length
+c_x, c_y : principal point
+k_0, k_1, k_2 : distortion coefficient
+p_x, p_y : distortion principal point offset
+b_a, b_g : bias for accelerometer and gyroscope
+c_ar, c_as, c_gs, c_gru, c_grl : IMU axis alignment parameters
+n_a, n_g : noise for accelerometer and gyroscope
+t_camera_to_body : translation vector for camera to imu alignment
+w_camera_to_body : rotation (Rodrigues') parameters for camera to IMU alignment
+```
 
 ## Loading and storing data
 To load depth and validity map filepaths:
