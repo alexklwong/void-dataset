@@ -190,8 +190,7 @@ The following are the definitions for the calibration parameter names:
 ```
 f_x, f_y : focal length
 c_x, c_y : principal point
-k_0, k_1, k_2 : distortion coefficient
-p_x, p_y : distortion principal point offset
+k_0, k_1, k_2, p_x, p_y : distortion coefficients
 b_a, b_g : bias for accelerometer and gyroscope
 c_ar, c_as, c_gs, c_gru, c_grl : IMU axis alignment parameters
 n_a, n_g : noise for accelerometer and gyroscope
