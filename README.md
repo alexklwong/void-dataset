@@ -184,6 +184,9 @@ with open(calibration_path, 'r') as json_file:
     calibration = json.load(json_file)
 ```
 
+Note: we use a radtan (plumb bob) distortion model.
+
+
 ## Loading and storing data
 To load depth and validity map filepaths:
 ```
