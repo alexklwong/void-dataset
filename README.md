@@ -164,10 +164,31 @@ unzip -o void_raw.zip -d void_raw/
 bash bash/setup_dataset_void_raw.sh unpack-only
 ```
 
+## Loading calibration
+Calibration are stored as JSON and text (formatted as JSON) files within the `calibration` folder.
+
+```
+void_dataset
+|---- <calibration>
+      |---- calibration.json
+      |---- calibration.txt
+```
+
+To read calibration as a map or dictionary:
+```
+import os, json
+
+calibration_path = os.path.join('calibration', 'calibration.json')
+
+with open(calibration_path, 'r') as json_file:
+    calibration = json.load(json_file)
+```
+
 ## Loading and storing data
 To load depth and validity map filepaths:
 ```
 import data_utils
+
 train_sparse_depth_filepath = 'data/void_1500/train_image.txt'
 train_validity_map_filepath = 'data/void_1500/train_image.txt'
 train_sparse_depth_paths = data_utils.load_paths(train_sparse_depth_filepath)
