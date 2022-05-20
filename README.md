@@ -130,9 +130,9 @@ Note: `gdown` intermittently fails and will complain about permissions
 
 As a workaround you may directly download the dataset by visiting:
 ```
-https://drive.google.com/open?id=1GGov8MaBKCEcJEXxY8qrh8Ldt2mErtWs
-https://drive.google.com/open?id=1c3PxnOE0N8tgkvTgPbnUZXS6ekv7pd80
-https://drive.google.com/open?id=14PdJggr2PVJ6uArm9IWlhSHO2y3Q658v
+https://drive.google.com/open?id=1kZ6ALxCzhQP8Tq1enMyNhjclVNzG8ODA
+https://drive.google.com/open?id=1ys5EwYK6i8yvLcln6Av6GwxOhMGb068m
+https://drive.google.com/open?id=1bTM5eh9wQ4U8p2ANOGbhZqTvDOddFnlI
 ```
 which will give you three files `void_150.zip`, `void_500.zip`, `void_1500.zip`
 
