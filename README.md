@@ -122,27 +122,23 @@ source /opt/ros/kinetic/setup.bash
 
 
 ## Downloading VOID
-To download VOID dataset release version using `gdown`:
-```
-bash bash/setup_dataset_void.sh
-```
-Note: `gdown` intermittently fails and will complain about permissions
+**We have migrated from Google Drive to OneDrive**
 
-As a workaround you may directly download the dataset by visiting:
+The bash scripts below are now obsolete!
 ```
-https://drive.google.com/open?id=1kZ6ALxCzhQP8Tq1enMyNhjclVNzG8ODA
-https://drive.google.com/open?id=1ys5EwYK6i8yvLcln6Av6GwxOhMGb068m
-https://drive.google.com/open?id=1bTM5eh9wQ4U8p2ANOGbhZqTvDOddFnlI
+bash/setup_dataset_void.sh
+bash/setup_dataset_void_raw.sh
 ```
-which will give you three files `void_150.zip`, `void_500.zip`, `void_1500.zip`
+
+To download the release version of the dataset:
+```
+wget 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g&download=1'
+```
 
 Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
 ```
-mkdir void_release
-unzip -o void_150.zip -d void_release/
-unzip -o void_500.zip -d void_release/
-unzip -o void_1500.zip -d void_release/
-bash bash/setup_dataset_void.sh unpack-only
+wget 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g&download=1'
+unzip void_release.zip
 ```
 
 If you encounter `error: invalid zip file with overlapped components (possible zip bomb)`. Please do the following
@@ -151,23 +147,14 @@ export UNZIP_DISABLE_ZIPBOMB_DETECTION=TRUE
 ```
 and run the above again.
 
-To download the raw VOID dataset (rosbag) using `gdown`:
+To download the raw VOID dataset (rosbag):
 ```
-bash bash/setup_dataset_void_raw.sh
+wget
 ```
-Note: `gdown` intermittently fails and will complain about permissions
-
-As a workaround you may directly download the dataset by visiting:
-```
-https://drive.google.com/open?id=19uHUtjUnsZ2zhGPYJ--8xNN1kqpi_uaJ
-```
-which will give you void_raw.zip
 
 Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
 ```
-mkdir void_raw
-unzip -o void_raw.zip -d void_raw/
-bash bash/setup_dataset_void_raw.sh unpack-only
+unzip void_raw.zip
 ```
 
 ## Loading calibration
