@@ -130,14 +130,16 @@ bash/setup_dataset_void.sh
 bash/setup_dataset_void_raw.sh
 ```
 
-To download the release version of the dataset:
+To download the release version of the dataset through your browser you may visit:
 ```
-wget 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g&download=1'
+https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g
 ```
 
-Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
+Assuming you are in the root of the repository, you can download the dataset via commandline using wget.
+To construct the same dataset structure as the setup script above:
 ```
-wget 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g&download=1'
+      
+wget 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g?e=0Zqe7g&download=1'
 unzip void_release.zip
 ```
 
