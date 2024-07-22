@@ -149,13 +149,15 @@ export UNZIP_DISABLE_ZIPBOMB_DETECTION=TRUE
 ```
 and run the above again.
 
-To download the raw VOID dataset (rosbag):
+To download the raw VOID dataset (rosbag) through your browser, you may visit:
 ```
-wget
+https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/EcdGqVyQ8DVBqnCX8lUqSDcBRVi0SpV2XwMdYiYbeCzOaA
 ```
 
-Assuming you are in the root of the repository, to construct the same dataset structure as the setup script above:
+Assuming you are in the root of the repository, you can download the dataset via commandline using wget.
+To construct the same dataset structure as the setup script above:
 ```
+wget void_raw.zip -O 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/EcdGqVyQ8DVBqnCX8lUqSDcBRVi0SpV2XwMdYiYbeCzOaA?e=QjCthr&download=1'
 unzip void_raw.zip
 ```
 
