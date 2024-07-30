@@ -139,7 +139,7 @@ Assuming you are in the root of the repository, you can download the dataset via
 To construct the same dataset structure as the setup script above:
 ```
       
-wget void_release.zip -O 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g?e=0Zqe7g&download=1'
+wget -O void_release.zip 'https://yaleedu-my.sharepoint.com/:u:/g/personal/alex_wong_yale_edu/Ebwvk0Ji8HhNinmAcKI5vSkBEjJTIWlA8PXwKNQX_FvB7g?e=0Zqe7g&download=1'
 unzip void_release.zip
 ```
 
